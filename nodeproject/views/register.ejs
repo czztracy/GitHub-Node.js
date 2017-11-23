@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/register.css' />
+   	<script type="text/javascript" src = "/js/require.js" defer async = "true" data-main="/js/main" charset="utf-8" ></script>
+  </head>
+  <body>
+    <div class="header">
+		<div class="headerbox">
+			<a href="#" class="logo"></a>
+			<div class="logo-title">欢迎注册</div>
+			<div class="account">
+				已有账号？
+				<a href="#">请登录</a>
+			</div>
+		</div>
+    </div>
+
+    <div class="contain">
+		<div class="main clearfix">
+			<div class="reg-form fl">
+				<form id="register-form" action="/users/register" method="post">
+					<div class="form-item form-account">
+						<label>用  户  名</label>
+						<txt style='position:absolute;z-index:2;line-height:46px;margin-left:20px;margin-top:1px;font-size:14px;font-family:"Microsoft YaHei", "Hiragino Sans GB";color:rgb(204, 204, 204); display: inline;left:114px;'>您的账户名和登录名</txt>
+						<input type="text" name="reName" class="field">
+					</div>
+					<div class="input-tip">
+						<span>
+							支持中文、字母、数字、"_"的组合，4-20个字符。
+						</span>
+					</div>
+					<div class="form-item form-account">
+						<label>设置密码</label>
+						<txt style='position:absolute;z-index:2;line-height:46px;margin-left:20px;margin-top:1px;font-size:14px;font-family:"Microsoft YaHei", "Hiragino Sans GB";color:rgb(204, 204, 204); display: inline;left:114px;'>建议至少使用两种字符组合</txt>
+						<input type="password" name="password" class="field">
+					</div>
+					<div class="input-tip">
+						<span>
+							建议使用字母、数字和符号两种以上的组合，6-20字符。
+						</span>
+					</div>
+					<div class="form-item form-account">
+						<label>确认密码</label>
+						<txt style='position:absolute;z-index:2;line-height:46px;margin-left:20px;margin-top:1px;font-size:14px;font-family:"Microsoft YaHei", "Hiragino Sans GB";color:rgb(204, 204, 204); display: inline;left:114px;'>请再次输入密码</txt>
+						<input type="password" name="passwordR" class="field">
+					</div>
+					<div class="input-tip">
+						<span>
+							请再次输入密码。
+						</span>
+					</div>
+					<div class="item-email-wrap">
+						<div class="form-item form-account">
+						<label>邮箱验证</label>
+						<txt style='position:absolute;z-index:2;line-height:46px;margin-left:20px;margin-top:1px;font-size:14px;font-family:"Microsoft YaHei", "Hiragino Sans GB";color:rgb(204, 204, 204); display: inline;left:114px;'>建议使用常用邮箱</txt>
+						<input type="text" name="Email" class="field">
+						</div>
+						<div class="input-tip">
+							<span>
+								验证完成后，你可以用该邮箱登录和找回密码。
+							</span>
+						</div>
+						<div class="orPhone">
+							<a href="#">手机验证</a>
+						</div>
+					</div>
+					<div class="item-phone-wrap">
+						<div class="form-item form-item-phone">
+						<label>手机验证</label>
+						<txt style='position:absolute;z-index:2;line-height:46px;margin-left:20px;margin-top:1px;font-size:14px;font-family:"Microsoft YaHei", "Hiragino Sans GB";color:rgb(204, 204, 204); display: inline;left:114px;'>建议使用常用手机</txt>
+						<input type="text" name="phone" class="field">
+						</div>
+						<div class="input-tip">
+							<span></span>
+						</div>
+						<div class="orEmail">
+							<a href="#">邮箱验证</a>
+						</div>
+					</div>
+					<div class="form-item form-item-phonecode">
+						<label>手机验证码</label>
+						<txt style='position:absolute;z-index:2;line-height:46px;margin-left:20px;margin-top:1px;font-size:14px;font-family:"Microsoft YaHei", "Hiragino Sans GB";color:rgb(204, 204, 204); display: inline;left:114px;'>请输入手机验证码</txt>
+						<input type="text" name="Code" class="field">
+						<button id="getPhoneCode" class="btn-phonecode" type="button">获取验证码</button>
+					</div>
+					<div class="input-tip">
+						<span>
+							验证完整后，你可以用该手机登录和找回密码。
+						</span>
+					</div>
+					<div>
+						<button class="btn-register" type="submit">立即注册</button>
+					</div>
+				</form>
+			</div>
+			<div class="reg-other" id="form-company">
+				<div class="company-reg">
+					<a href="#">
+						<i class="i-company"></i>
+						<span>企业用户注册</span>
+					</a>
+				</div>
+				<div class="inter-cust">
+					<a href="#">
+						<i class="i-global"></i>
+						<span>INTERNATIONAL<br />CUSTOMERS</span>
+					</a>
+				</div>
+			</div>
+		</div>
+    </div>
+
+    <div class="footer">
+		<div class="links">
+			<a href="#">关于我们</a>
+			|
+			<a href="#">联系我们</a>
+			|
+			<a href="#">人才招聘</a>
+			|
+			<a href="#">商家入驻</a>
+			|
+			<a href="#">广告服务</a>
+			|
+			<a href="#">手机京东</a>
+			|
+			<a href="#">友情链接</a>
+			|
+			<a href="#">销售联盟</a>
+			|
+			<a href="#">京东社区</a>
+			|
+			<a href="#">京东公益</a>
+			|
+			<a href="#">English site</a>
+		</div>
+		<div class="copyrigth">Copyright&copy;2004-2016 京东JD.com 版权所有</div>
+    </div>
+  </body>
+</html>

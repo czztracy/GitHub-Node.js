@@ -1,0 +1,113 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, a {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #666; }
+
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei","Hiragino Sans GB"; }
+
+li {
+  list-style: none; }
+
+img {
+  border: 0;
+  vertical-align: middle; }
+
+input {
+  outline: 0; }
+
+.header {
+  height: 110px;
+  background: url(../images/headbg.jpg) repeat-x left bottom; }
+  .header .headerbox {
+    width: 1210px;
+    margin: 0 auto; }
+    .header .headerbox .logo {
+      width: 160px;
+      height: 50px;
+      float: left;
+      margin-top: 24px;
+      background: url(../images/icon.png) no-repeat; }
+    .header .headerbox .logo-title {
+      float: left;
+      height: 34px;
+      line-height: 34px;
+      font-size: 24px;
+      color: #333;
+      padding-left: 20px;
+      margin-top: 34px; }
+    .header .headerbox .account {
+      font-size: 16px;
+      float: right;
+      margin-top: 55px;
+      color: #999; }
+      .header .headerbox .account a {
+        color: #333; }
+        .header .headerbox .account a:hover {
+          text-decoration: underline; }
+
+.title {
+  width: 1210px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px 0;
+  color: #FFF;
+  background: url(../images/titlebg.png) no-repeat center;
+  line-height: 16px; }
+
+table {
+  margin: 20px auto 0;
+  width: 1210px;
+  text-align: center;
+  min-height: 500px;
+  overflow: hidden; }
+  table .first td {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    width: 300px; }
+  table .con {
+    line-height: 30px;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px; }
+    table .con .user a {
+      color: #E21C19;
+      font-weight: 600;
+      font-size: 16px; }
+  table .button {
+    width: 1210px;
+    height: 40px;
+    color: #000; }
+    table .button a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 0 20px;
+      color: orange; }
+  table .foot {
+    margin-top: 20px; }
+
+.footer {
+  width: 1210px;
+  margin: 0 auto;
+  font-size: 12px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+  color: #999;
+  padding-bottom: 30px;
+  overflow: hidden; }
+  .footer .links {
+    padding-top: 30px;
+    padding-bottom: 15px; }
+    .footer .links a {
+      color: #999;
+      margin: 0 10px; }
+      .footer .links a:hover {
+        text-decoration: underline; }
+
+/*# sourceMappingURL=list.css.map */

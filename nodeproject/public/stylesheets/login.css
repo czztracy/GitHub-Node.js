@@ -1,0 +1,346 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, a {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #666; }
+
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei","Hiragino Sans GB"; }
+
+li {
+  list-style: none; }
+
+img {
+  border: 0;
+  vertical-align: middle; }
+
+input {
+  outline: 0; }
+
+.header {
+  height: 110px; }
+  .header .headerbox {
+    width: 1210px;
+    margin: 0 auto; }
+    .header .headerbox .logo {
+      width: 160px;
+      height: 50px;
+      float: left;
+      margin-top: 24px;
+      background: url(../images/icon.png) no-repeat; }
+    .header .headerbox .logo-title {
+      float: left;
+      height: 34px;
+      line-height: 34px;
+      font-size: 24px;
+      color: #333;
+      padding-left: 20px;
+      margin-top: 34px; }
+    .header .headerbox .account {
+      font-size: 16px;
+      float: right;
+      margin-top: 55px;
+      color: #999; }
+      .header .headerbox .account a {
+        color: #333; }
+        .header .headerbox .account a:hover {
+          text-decoration: underline; }
+
+#content {
+  clear: both;
+  overflow: hidden; }
+  #content .tips-wrap {
+    background: #fff8f0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    overflow: hidden; }
+    #content .tips-wrap .icon-tips {
+      background: url(../images/icon-tips.png) no-repeat;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      vertical-align: top;
+      margin-right: 5px; }
+    #content .tips-wrap p {
+      color: #ffa258;
+      font-size: 12px;
+      display: inline-block; }
+  #content .login-wrap {
+    position: relative;
+    height: 475px;
+    margin: 10px 0 0px;
+    z-index: 5;
+    margin-top: 0px; }
+    #content .login-wrap .login-form {
+      float: right;
+      top: 40%;
+      position: relative;
+      z-index: 4;
+      background: #fff;
+      overflow: visible;
+      width: 346px; }
+      #content .login-wrap .login-form .login-tab {
+        width: 100%;
+        height: 54px;
+        font-family: "microsoft yahei";
+        text-align: center;
+        border-bottom: 1px solid #f4f4f4;
+        position: absolute;
+        background: #fff;
+        display: block;
+        font-size: 18px; }
+        #content .login-wrap .login-form .login-tab a {
+          outline: #6d6d6d none 0px;
+          font-weight: 700;
+          color: #e4393c;
+          width: 99%;
+          height: 18px;
+          position: absolute;
+          left: 0;
+          top: 18px;
+          border-right: 1px solid #f4f4f4;
+          text-decoration: none; }
+      #content .login-wrap .login-form .login-box {
+        width: 306px;
+        padding: 20px; }
+        #content .login-wrap .login-form .login-box .tab-h {
+          height: 35px; }
+        #content .login-wrap .login-form .login-box .msg-wrap {
+          min-height: 23px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          height: auto !important; }
+          #content .login-wrap .login-form .login-box .msg-wrap .msg-error {
+            position: relative;
+            background: #ffebeb;
+            color: #e4393c;
+            border: 1px solid #faccc6;
+            padding: 3px 10px 3px 40px;
+            line-height: 15px;
+            height: auto; }
+            #content .login-wrap .login-form .login-box .msg-wrap .msg-error b {
+              position: absolute;
+              top: 50%;
+              left: 10px;
+              display: block;
+              margin-top: -8px;
+              width: 16px;
+              height: 16px;
+              overflow: hidden;
+              background: url(../images/pwd-icons-new.png) -104px -49px no-repeat; }
+          #content .login-wrap .login-form .login-box .msg-wrap .hide {
+            display: none; }
+        #content .login-wrap .login-form .login-box .mt {
+          display: inline-block;
+          display: block;
+          width: 306px;
+          overflow: visible;
+          height: 27px;
+          cursor: default; }
+          #content .login-wrap .login-form .login-box .mt:after {
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden; }
+  #content .form .txt {
+    line-height: 18px;
+    height: 18px;
+    border: 0;
+    padding: 10px 0 10px 50px;
+    width: 254px;
+    float: none;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: '\5b8b\4f53'; }
+  #content .form .item-forel {
+    border: 1px solid #bdbdbd;
+    height: 38px;
+    width: 304px; }
+    #content .form .item-forel .clear-btn {
+      position: absolute;
+      z-index: 20;
+      right: 6px;
+      top: 12px;
+      width: 14px;
+      height: 14px;
+      background: url(../images/pwd-icons-new.png) -25px -143px no-repeat;
+      cursor: pointer; }
+  #content .form .item-fore2 {
+    border: 1px solid #bdbdbd;
+    width: 304px;
+    height: 38px; }
+    #content .form .item-fore2 .login-label {
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      left: 0;
+      width: 38px;
+      height: 38px;
+      border-right: 1px solid #bdbdbd;
+      background: url(../images/pwd-icons-new.png) no-repeat;
+      background-position: -48px 0; }
+  #content .form .item {
+    position: relative;
+    margin-bottom: 20px; }
+    #content .form .item .login-label {
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      left: 0;
+      width: 38px;
+      height: 38px;
+      border-right: 1px solid #bdbdbd;
+      background: url(../images/pwd-icons-new.png) no-repeat;
+      background-position: 0 0; }
+  #content .form .itxt {
+    line-height: 18px;
+    height: 18px;
+    border: 0;
+    padding: 10px 0 10px 50px;
+    width: 254px;
+    float: none;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: '\5b8b\4f53'; }
+  #content .form .safe {
+    position: relative;
+    color: #666; }
+    #content .form .safe span {
+      margin-right: 15px; }
+    #content .form .safe .forget-pw-safe {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 0; }
+  #content .form .item-fore5 {
+    margin-bottom: 10px; }
+    #content .form .item-fore5 .login-btn {
+      border: 1px solid #cb2a2d;
+      margin: 0 auto;
+      height: 32px;
+      width: 99%;
+      position: relative; }
+      #content .form .item-fore5 .login-btn .btn-img {
+        border: 1px solid #e85356;
+        display: block;
+        width: 302px;
+        background: #e4393c;
+        line-height: 31px;
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Microsoft YaHei';
+        text-align: center;
+        sursor: pointer;
+        margin: 0;
+        padding: 0; }
+  #content .coagent {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 50px;
+    border-top: 1px solid #f4f4f4;
+    height: auto;
+    background-color: #fcfcfc; }
+    #content .coagent ul {
+      list-style: none;
+      display: block; }
+      #content .coagent ul:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden; }
+      #content .coagent ul li {
+        float: left; }
+        #content .coagent ul li .line {
+          color: #ccc;
+          padding: 0 10px; }
+        #content .coagent ul li a.pdl {
+          display: inline-block;
+          position: relative;
+          padding-left: 24px; }
+          #content .coagent ul li a.pdl:hover {
+            color: red;
+            text-decoration: underline; }
+          #content .coagent ul li a.pdl b {
+            width: 19px;
+            height: 18px;
+            display: block;
+            background: url(../images/QQ-weixin.png) no-repeat;
+            margin: 0 auto;
+            position: absolute;
+            float: left;
+            left: 0;
+            top: 16px; }
+          #content .coagent ul li a.pdl .QQ-icon {
+            background-position: 0 0; }
+          #content .coagent ul li a.pdl .weixin-icon {
+            background-position: -20px 0; }
+      #content .coagent ul li.extra-r {
+        float: right; }
+        #content .coagent ul li.extra-r:after {
+          content: ".";
+          display: block;
+          height: 0;
+          clear: both;
+          visibility: hidden; }
+    #content .coagent .regist-link {
+      color: #b61d1d;
+      font-size: 14px; }
+      #content .coagent .regist-link a {
+        color: #b61d1d; }
+        #content .coagent .regist-link a:hover {
+          text-decoration: underline; }
+        #content .coagent .regist-link a b {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          overflow: hidden;
+          background: url(../images/pwd-icons-new.png) -104px -75px no-repeat;
+          vertical-align: middle;
+          margin-right: 5px; }
+  #content .login-banner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 475px;
+    background: #e93854; }
+    #content .login-banner .i-inner {
+      background: url(../images/bg.jpg) 0px 0px no-repeat;
+      background-color: #ffc523;
+      position: relative;
+      z-index: 3;
+      height: 475px; }
+
+#nloginpwd {
+  font-family: Tahoma,Helvetica,Arial; }
+
+.w {
+  width: 990px;
+  margin: 0 auto; }
+
+.footer {
+  width: 1210px;
+  margin: 0 auto;
+  font-size: 12px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+  color: #999;
+  padding-bottom: 30px;
+  overflow: hidden; }
+  .footer .links {
+    padding-top: 30px;
+    padding-bottom: 15px; }
+    .footer .links a {
+      color: #999;
+      margin: 0 10px; }
+      .footer .links a:hover {
+        text-decoration: underline; }
+
+/*# sourceMappingURL=login.css.map */

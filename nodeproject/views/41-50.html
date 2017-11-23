@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+	/*for(var i = 1; i <= 3; i ++){
+		setTimeout(function(){
+			document.write(i);
+		}, 0);
+	}*///4 4 4
+
+
+	/*for(var i = 1; i <= 3; i ++){
+		setTimeout((function(a){
+			document.write(a);
+		})(i), 0);
+	}*///1 2 3 作用域
+
+	//清除字符串前后空格
+	/*	if(!String.prototype.trim()){
+			String.prototype.trim = function(){
+				return this.replace(/^\s+/, "").replace(/\s+$/, "");
+			}
+		}
+	
+	var string = " test 1 ".trim();
+	alert(string == 'test 1');*/
+	/*function a(){
+		this.name = "1";
+		this.run = function(){
+			return '23232';
+		}
+	}
+	var A = new a();
+	function b(){
+		
+	}
+	b.prototype = A;
+	console.log(b.prototype);*/
+	/*function Add(){
+		this.add = function(a, b){
+			alert(a+b);
+		}
+	}
+	function Sub(){
+		this.sub = function(a, b){
+			alert(a-b);
+		}
+	}
+	function A(){
+		Add.call(this);
+		Sub.call(this);
+		
+	}
+
+	var object = new  A();
+	object.sub(3, 4);*/
+
+	/*function A(a,b){
+		alert(a+b);
+	}
+	function B(a,b){
+		alert(a-b);
+	}
+	//B.call(A, 2, 1);// 1
+	//A.apply(B, [2, 1]);// 3
+	A.call(B, 2, 1);*/
+
+	window.onload = function(){
+		/*var oInputs = document.getElementsByTagName('input');
+		var list = [];
+		for(var i = 0; i < oInputs.length; i++){
+			if(oInputs[i].type == 'text'){
+				list.push(oInputs[i]);
+			}
+		}
+		alert(list.length);	*/
+		var arr = [];
+		function random(istrat, iend){
+			var num = iend - istrat + 1;
+			return Math.floor(Math.random()*num  + istrat);
+		}
+		for(var i = 0; i < 10; i ++){
+			var res = random(10, 100);
+			arr.push(res);
+		}
+		alert(arr);
+	}
+	</script>
+	<input type="text" name="">
+	<input type="text" name="">
+	<input type="password" name="">
+</body>
+</html>

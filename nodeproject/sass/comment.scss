@@ -1,0 +1,121 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, a {margin:0;padding:0;}
+a{text-decoration:none;color:#666;}
+body{font-size:14px;font-family: "Microsoft YaHei","Hiragino Sans GB";}
+li{list-style:none;}
+img{border:0;vertical-align:middle;}
+input{outline:0;}
+.header{
+	height:110px;
+	background:url(../images/headbg.jpg) repeat-x left bottom;
+	.headerbox{
+		width:1210px;
+		margin:0 auto;
+
+		.logo{
+			width: 160px;
+			height: 50px;
+			float: left;
+			margin-top: 24px;
+			background:url(../images/icon.png) no-repeat;
+		}
+		.logo-title{
+			float:left;
+			height:34px;
+			line-height:34px;
+			font-size:24px;
+			color:#333;
+			padding-left:20px;
+			margin-top:34px;
+		}
+		.account{
+			font-size:16px;
+			float:right;
+			margin-top:55px;
+			color:#999;
+
+			a{
+				color:#333;
+				&:hover{text-decoration:underline;}
+			}
+		}
+	}
+}
+
+@mixin A{
+	margin:0 auto;
+	width:800px;
+	font-size:14px;
+	color:#333;
+}
+.comment{
+	width:100%;
+	height:600px;
+	background:#FFFFFF;
+
+	form{
+		margin:20px auto;
+		width:1210px;
+		padding:20px;
+		height:500px;
+		background:#E3E4E5;
+		text-align:center;
+		font-size:20px;
+		font-weight:700;
+		color:#E01222;
+		position:relative;
+
+		input{outline:0;}
+		.title{
+			@include A;
+			height:24px;
+		}
+		.val{
+			@include A;
+			height:400px;
+			margin-top:20px;
+			margin-left:60px;
+			outline:0;
+		}
+		.btn{
+			position:absolute;
+			right:200px;
+			bottom:26px;
+			width:60px;
+			height:30px;
+			text-align:center;
+			color:#FFFFFF;
+			background:red;
+			border:1px solid red;
+			cursor:pointer;
+			font-weight:600;
+			font-size:14px;
+		}
+	}
+}
+
+
+
+
+
+.footer{
+	width:1210px;
+	margin:0 auto;
+	font-size:12px;
+	text-align:center;
+	border-top:1px solid #e6e6e6;
+	color:#999;
+	padding-bottom:30px;
+	overflow:hidden;
+
+	.links{
+		padding-top:30px;
+		padding-bottom:15px;
+
+		a{
+			color:#999;margin:0 10px;
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+	}
+}

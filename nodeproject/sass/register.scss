@@ -1,0 +1,237 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, a {margin:0;padding:0;}
+a{text-decoration:none;color:#666;}
+body{font-size:14px;font-family: "Microsoft YaHei","Hiragino Sans GB";}
+li{list-style:none;}
+img{border:0;vertical-align:middle;}
+input{outline:0;}
+.header{
+	height:110px;
+	background:url(../images/headbg.jpg) repeat-x left bottom;
+	.headerbox{
+		width:1210px;
+		margin:0 auto;
+
+		.logo{
+			width: 160px;
+			height: 50px;
+			float: left;
+			margin-top: 24px;
+			background:url(../images/icon.png) no-repeat;
+		}
+		.logo-title{
+			float:left;
+			height:34px;
+			line-height:34px;
+			font-size:24px;
+			color:#333;
+			padding-left:20px;
+			margin-top:34px;
+		}
+		.account{
+			font-size:16px;
+			float:right;
+			margin-top:55px;
+			color:#999;
+
+			a{
+				color:#333;
+				&:hover{text-decoration:underline;}
+			}
+		}
+	}
+}
+
+.contain{
+	width:1210px;
+	margin:0 auto;
+	overflow:hidden;
+
+	.main{
+		margin:50px auto 60px;
+		width:830px;
+		overflow:hidden;
+	}
+}
+.clearfix{
+	display:block;
+}
+.reg-form{width:400px;}
+.fl{float:left;}
+.form-item{
+	width:398px;
+	height:52px;
+	border:1px solid #ddd;
+	position:relative;
+
+	label{
+		float:left;
+		width:90px;
+		height:52px;
+		line-height:52px;
+		padding-left:20px;
+	}
+
+	txt{
+		margin-top:2px !important;
+	}
+	.field{
+		border:0 none;font-size:14px;width:190px;height:19px;padding-bottom:11px;padding-left:20px;padding-top:16px;
+	}
+
+	.img-code{
+		position:absolute;
+		right:3px;
+		top:3px;
+		width:110px;
+		height:46px;
+		cursor:pointer;
+	}
+
+}
+
+.input-tip{
+	color:#c5c5c5;
+	height:27px;
+	font-size:12px;
+	padding-top:5px;
+
+	span{
+		display:none;
+	}
+}
+
+.item-email-wrap{
+	height:86px;
+	position:relative;
+	z-index:11;
+	display:none;
+
+	.orPhone{
+		position:absolute;
+		right:0;
+		bottom:6px;
+		font-size:12px;
+
+		a{color:#38f;&:hover{text-decoration:underline;}}
+	}
+}
+.item-phone-wrap{
+	height:86px;position:relative;z-index:2;
+	.orEmail{
+		position:absolute;
+		right:0;
+		bottom:6px;
+		font-size:12px;
+		a{
+			color:#38f;
+			&:hover{text-decoration:underline;}
+		}
+	}
+}
+.btn-phonecode{
+	position:absolute;
+	right:3px;
+	top:3px;
+	width:110px;
+	height:46px;
+	border:0;
+	background:#f2f2f2;
+	color:#333;
+	padding:0;
+	cursor:pointer;
+}
+.btn-register{
+	width:100%;
+	height:54px;
+	background:#e22;
+	color:#fff;
+	font-size:16px;
+	font-family: "Microsoft YaHei","Hiragino Sans GB";
+	cursor:pointer;
+	outline:0;
+	border:0;
+}
+
+.reg-other{
+	float:left;
+	margin-left:104px;
+	height:605px;
+	padding-left:90px;
+	border-left:1px solid #e6e6e6;
+
+	.company-reg{
+		width:160px;
+		height:60px;
+		border-bottom:1px solid #ddd;
+		margin-left:30px;
+
+		a{
+			display:block;
+			width:160px;
+			height:30px;
+
+			&:hover{
+				text-decoration:underline;color:#000;
+				span{font-weight:800;}
+			}
+			i{
+				display:inline-block;
+				width:30px;
+				height:29px;
+				vertical-align:middle;
+				margin-right:15px;
+				background:url(../images/icon.png) no-repeat;
+			}
+			.i-company{background-position:0 -50px;}
+			span{vertical-align:middle;}
+		}
+	}
+	.inter-cust{
+		width:160px;margin-left:30px;margin-top:30px;
+
+		a{
+			display:block;width:170px;height:40px;color:#000;
+			&:hover{
+				text-decoration:underline;
+				span{font-weight:800;}
+			}
+			i{
+				display:inline-block;
+				width:30px;
+				height:30px;
+				vertical-align:text-bottom;
+				margin-right:15px;
+				float:left;
+				margin-top:7px;
+				background:url(../images/icon.png) no-repeat;
+			}
+
+			.i-global{background-position:-50px -50px;}
+			span{display:inline-block;}
+		}
+	}
+}
+
+
+.footer{
+	width:1210px;
+	margin:0 auto;
+	font-size:12px;
+	text-align:center;
+	border-top:1px solid #e6e6e6;
+	color:#999;
+	padding-bottom:30px;
+	overflow:hidden;
+
+	.links{
+		padding-top:30px;
+		padding-bottom:15px;
+
+		a{
+			color:#999;margin:0 10px;
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+	}
+}

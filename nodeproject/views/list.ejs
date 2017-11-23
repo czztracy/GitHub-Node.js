@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/list.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="headerbox">
+        <a href="#" class="logo"></a>
+        <div class="logo-title">欢迎注册</div>
+        <div class="account">
+          已有账号？
+          <a href="#">请登录</a>
+        </div>
+      </div>
+    </div>
+    <h3 class="title">客户反馈</h3>
+    <table align="center" border="0" cellspacing="0" cellpadding="0">
+      <tr class="first">
+        <td>序号</td>
+        <td>用户名</td>
+        <td>反馈问题</td>
+        <td>反馈内容</td>
+        <td>时间</td>
+      </tr>
+      <% resData.forEach(function(item, index){ %>
+        <tr class="con">
+          <td><%= (index+1) %></td>
+          <td class="user">
+            <a href="/detail?cid=<%= parseInt(item.cid) %>">
+              <%= item.username %>
+            </a>
+          </td>
+          <td><%= item.title %></td>
+          <td><%= item.val %></td>
+          <td><%= item.mydate %></td>
+        </tr>
+      <% }) %>
+
+      <tr class="foot">
+        <td colspan="4" class="button">
+          <a href="/list?pageNo=1">首页</a>
+          <a href="/list?pageNo=<%= pageNo>1? parseInt(pageNo)-1 : 1 %>">上一页</a> 
+          第&nbsp;<%= pageNo %>&nbsp;页&nbsp;&nbsp;&nbsp;共&nbsp;<%= totalPage %>&nbsp;页
+          <a href="/list?pageNo=<%= pageNo<totalPage? parseInt(pageNo)+1 : totalPage %>">下一页</a>
+          <a href="/list?pageNo=<%= totalPage %>">最后一页</a>
+          共&nbsp;<%= count %>&nbsp;条数据
+        </td>
+      </tr>
+    </table>
+
+    <div class="footer">
+      <div class="links">
+        <a href="#">关于我们</a>
+        |
+        <a href="#">联系我们</a>
+        |
+        <a href="#">人才招聘</a>
+        |
+        <a href="#">商家入驻</a>
+        |
+        <a href="#">广告服务</a>
+        |
+        <a href="#">手机京东</a>
+        |
+        <a href="#">友情链接</a>
+        |
+        <a href="#">销售联盟</a>
+        |
+        <a href="#">京东社区</a>
+        |
+        <a href="#">京东公益</a>
+        |
+        <a href="#">English site</a>
+      </div>
+      <div class="copyrigth">Copyright&copy;2004-2016 京东JD.com 版权所有</div>
+    </div>
+  </body>
+</html>

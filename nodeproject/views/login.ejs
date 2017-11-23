@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/login.css">
+  </head>
+  <body>
+
+    <div class="header">
+		<div class="headerbox">
+			<a href="#" class="logo"></a>
+			<div class="logo-title">欢迎注册</div>
+			<div class="account">
+				已有账号？
+				<a href="#">请登录</a>
+			</div>
+		</div>
+    </div>
+
+	<div id="content">
+		<div class="tips-wrap">
+			<i class="icon-tips"></i>
+			<p>
+				依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！新版<a href="#">《京东隐私政策》</a>已上线，将更有利于您的个人隐私。
+			</p>
+		</div>
+		<div class="login-wrap">
+			<div class="w">
+				<div class="login-form">
+					<div class="login-tab">
+						<a href="#">账户登录</a>
+					</div>
+					<div class="login-box" style="display:block;visibility:visible;">
+						<div class="mt tab-h"></div>
+						<div class="msg-wrap">
+							<div class="msg-error hide">
+								<b></b>
+							</div>
+						</div>
+						<div class="form">
+							<form id="formlogin" method="post" name="sa_token" action="/users/login">
+								<div class="item item-forel" style="z-index:6;">
+									<label class="login-label"></label>
+									<input type="text" name="loginname" class="itxt" placeholder="邮箱/用户名/已验证手机">
+									<span class="clear-btn" style="display:none;"></span>
+								</div>
+								<div class="item item-fore2" style="visibility:visible">
+									<label class="login-label"></label>
+									<input type="password" id="nloginpwd" placeholder="密码" name="nloginpwd" class="itxt itxt-error">
+								</div>
+								<div class="item item-fore4">
+									<div class="safe">
+										<span></span>
+										<span class="forget-pw-safe">
+											<a href="#">忘记密码</a>
+										</span>
+									</div>
+								</div>
+								<div class="item item-fore5">
+									<div class="login-btn">
+										<button  class="btn-img" id="loginsubmit" type="submit">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="coagent" id="kbCoagent">
+							<ul>
+								<li>
+									<a href="#" class="pdl">
+										<b class="QQ-icon"></b>
+										<span>QQ</span>
+									</a>
+									<span class="line">|</span>
+								</li>
+								<li>
+									<a href="#" class="pdl">
+										<b class="weixin-icon"></b>
+										<span>微信</span>
+									</a>
+								</li>
+								<li class="extra-r">
+									<div class="regist-link">
+										<a href="">
+											<b></b>
+											立即注册
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="login-banner" style="background-color:#ffc523;">
+				<div class="w">
+					<div id="banner-bg" class="i-inner"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="footer">
+		<div class="links">
+			<a href="#">关于我们</a>
+			|
+			<a href="#">联系我们</a>
+			|
+			<a href="#">人才招聘</a>
+			|
+			<a href="#">商家入驻</a>
+			|
+			<a href="#">广告服务</a>
+			|
+			<a href="#">手机京东</a>
+			|
+			<a href="#">友情链接</a>
+			|
+			<a href="#">销售联盟</a>
+			|
+			<a href="#">京东社区</a>
+			|
+			<a href="#">京东公益</a>
+			|
+			<a href="#">English site</a>
+		</div>
+		<div class="copyrigth">Copyright&copy;2004-2016 京东JD.com 版权所有</div>
+    </div>
+  </body>
+</html>
